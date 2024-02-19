@@ -18,4 +18,111 @@ img {
 
 body {
     font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+/*--------------------
+        LAYOUT
+----------------------*/
+
+main {
+    display: flex;
+    height: calc(100vh - 90px);   
+}
+
+#header-side {
+    width: 230px;
+}
+
+#col-large {
+    width: calc(100% - 230px);
+}
+
+#player {
+    height: 90px;
+    position: relative;
+}
+
+.top-bar-container {
+    height: 90px;
+}
+
+.bottom-music-container {
+    height: calc(100% - 90px);
+}
+
+.col {
+    height: 100%;
+    padding: 10px;
+}
+
+
+/*--------------------
+    BACKGROUND COLOR
+----------------------*/
+
+#header-side {
+    background-color: #000;
+}
+
+.top-bar-container {
+    background-color: #080b12;
+}
+
+.bottom-music-container {
+    background-color: #141922;
+}
+
+#player {
+    background-color: #282828;
+}
+
+/*--------------------
+    HEADER SIDE
+----------------------*/
+
+#header-side .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60%;
+}
+
+.menu img {
+    width: 40px;
+}
+
+.bottom-container-navigation img {
+    width: 20px;
+}
+
+/*--------------------
+    MAIN CONTENT
+----------------------*/
+
+.bottom-music-container {
+    overflow-y: auto;
+}
+
+/*--------------------
+    FOOTER PLAYER
+----------------------*/
+
+
+
+/*--------------------
+    MEDIA QUERY
+----------------------*/
+
+@media screen and (max-width: 600px) {
+    #header-side {
+        width: 50px;
+    }
+
+    #col-large {
+        width: calc(100% - 50px);
+    }
 }
