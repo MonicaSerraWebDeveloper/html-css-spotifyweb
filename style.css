@@ -18,7 +18,57 @@ img {
 
 body {
     font-family: "Montserrat", sans-serif;
+    color: #717171;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #717171;
+}
+
+/*--------------------
+        UTILITIES
+----------------------*/
+
+.flex {
+    display: flex;
+}
+
+.column-direction {
+    flex-direction: column;
+} 
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.margin-bottom > * {
+    margin-bottom: 20px;
+}
+
+/*--------------------
+        TYPOGRAPHY
+----------------------*/
+
+h3 {
+    font-size: 14px;
     color: #fff;
+    text-transform: uppercase;
 }
 
 /*--------------------
@@ -53,9 +103,8 @@ main {
 
 .col {
     height: 100%;
-    padding: 10px;
+    padding: 20px;
 }
-
 
 /*--------------------
     BACKGROUND COLOR
@@ -84,7 +133,10 @@ main {
 #header-side .col {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.top-container-navigation {
+    flex-grow: 1;
 }
 
 .logo {
@@ -92,11 +144,45 @@ main {
 }
 
 .menu img {
-    width: 40px;
+    width: 20px;
+}
+
+.btn-playlist {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #717171;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-playlist i {
+    background-color: #717171;
+    color: #000;
+    padding: 8px;
 }
 
 .bottom-container-navigation img {
     width: 20px;
+}
+
+.download {
+    border-bottom: 1px solid #717171;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.download img {
+    width: 14px;
+}
+
+.account img {
+    background-color: #808080;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 /*--------------------
