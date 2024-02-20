@@ -1,6 +1,6 @@
-/*--------------------
+/*------------------------
         RESET
-----------------------*/
+--------------------------*/
 
 * {
     margin: 0;
@@ -12,9 +12,9 @@ img {
     max-width: 100%;
 }
 
-/*--------------------
+/*------------------------
         GENERAL
-----------------------*/
+--------------------------*/
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -33,9 +33,9 @@ a {
     color: #717171;
 }
 
-/*--------------------
+/*------------------------
         UTILITIES
-----------------------*/
+--------------------------*/
 
 .flex {
     display: flex;
@@ -61,19 +61,35 @@ a {
     margin-bottom: 20px;
 }
 
-/*--------------------
+.margin-bottom-small > * {
+    margin-bottom: 10px;
+}
+
+/*------------------------
         TYPOGRAPHY
-----------------------*/
+--------------------------*/
+
+h2 {
+    font-size: 24px;
+    color: #fff;
+}
 
 h3 {
     font-size: 14px;
     color: #fff;
+}
+
+p {
+    font-size: 12px;
+}
+
+.playlist-title h3 {
     text-transform: uppercase;
 }
 
-/*--------------------
+/*------------------------
         LAYOUT
-----------------------*/
+--------------------------*/
 
 .container {
     display: flex;
@@ -115,9 +131,9 @@ h3 {
     display: none;
 }
 
-/*--------------------
+/*------------------------
     BACKGROUND COLOR
-----------------------*/
+--------------------------*/
 
 #header-side {
     background-color: #000;
@@ -135,9 +151,9 @@ h3 {
     background-color: #282828;
 }
 
-/*--------------------
+/*------------------------
     HEADER SIDE
-----------------------*/
+--------------------------*/
 
 #header-side {
     display: flex;
@@ -196,9 +212,9 @@ h3 {
     object-fit: contain;
 }
 
-/*--------------------
-    MAIN CONTENT
-----------------------*/
+/*------------------------
+    MAIN CONTENT TOP
+--------------------------*/
 
 .top-bar-container {
     /* padding: 24px 10px; */
@@ -221,15 +237,60 @@ h3 {
     overflow-y: auto;
 }
 
-/*--------------------
+/*------------------------
+    MAIN CONTENT BOTTOM
+--------------------------*/
+
+.bottom-music-container {
+    padding: 16px;
+}
+
+.category ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    text-transform: uppercase;
+}
+
+.row {
+    padding-top: 30px;
+}
+
+.grid {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.grid-items {
+    width: calc(100% / 6 - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*------------------------
     FOOTER PLAYER
-----------------------*/
+--------------------------*/
 
 
 
 /*--------------------
     MEDIA QUERY
 ----------------------*/
+
+@media screen and (max-width: 1100px) {
+    .grid-items {
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid-items {
+        width: calc(100% / 2 - 10px);
+    }
+}
 
 @media screen and (max-width: 600px) {
     #header-side {
