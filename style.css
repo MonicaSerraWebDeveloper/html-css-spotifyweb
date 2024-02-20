@@ -105,6 +105,18 @@ main {
     padding: 20px;
 }
 
+.menu-mobile {
+    display: none;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.bottom-container-navigation-mobile {
+    display: none;
+}
+
 /*--------------------
     BACKGROUND COLOR
 ----------------------*/
@@ -230,5 +242,54 @@ main {
 
     #col-large {
         width: calc(100% - 50px);
+    }
+
+    .col {
+        padding: 8px;
+    }
+
+    .logo-mobile {
+        display: block;
+        width: 60px;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-mobile img {
+        display: block;
+        width: 60px;
+    }
+
+    .bottom-container-navigation-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .download {
+        display: flex;
+        justify-content: center;
+    }
+
+    .account {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .bottom-container-navigation {
+        display: none;
     }
 }
