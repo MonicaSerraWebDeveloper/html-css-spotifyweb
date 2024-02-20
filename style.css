@@ -222,7 +222,6 @@ p {
 --------------------------*/
 
 .top-bar-container {
-    /* padding: 24px 10px; */
     display: flex;
     justify-content: flex-end;
 }
@@ -277,6 +276,41 @@ p {
 
 .rounded-image {
     border-radius: 50%;
+}
+
+.grid-image {
+    position: relative;
+}
+
+.overlay-icon {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 10;
+}
+
+.overlay-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.overlay-bg-rounded {
+    border-radius: 50%;
+}
+
+.grid-image:hover .overlay-icon, 
+.grid-image:hover .overlay-bg,
+.grid-image:hover .overlay-bg-rounded {
+    display: block;
 }
 
 /*------------------------
