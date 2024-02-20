@@ -79,6 +79,11 @@ h3 {
     color: #fff;
 }
 
+h4 {
+    font-size: 12px;
+    color: #fff;
+}
+
 p {
     font-size: 12px;
 }
@@ -249,7 +254,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 14px;
+    gap: 20px;
     text-transform: uppercase;
 }
 
@@ -278,7 +283,92 @@ p {
     FOOTER PLAYER
 --------------------------*/
 
+/* LAYOUT */
 
+.footer-row {
+    padding: 20px 0;
+    border: 2px solid red;
+    height: 100%;
+}
+
+.col {
+    width: calc(100% / 6);
+}
+
+.col > * {
+    padding: 0 12px;
+}
+
+.col-center {
+    flex-grow: 1;
+    align-items: center;
+}
+
+/* COLUMN LEFT */
+
+.col-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.album-image {
+    width: 20%;
+}
+
+.album-image img {
+    display: block;
+}
+
+.artist {
+    flex-grow: 1;
+}
+
+.artist p {
+    font-size: 10px;
+}
+
+.feedback-icon {
+    display: flex;
+    gap: 15px;
+}
+
+/* COLUMN CENTER */
+
+.icon-player {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-player .fa-circle-play {
+    font-size: 26px;
+}
+
+.icon-player i {
+    color: #fff;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 8px;
+    color: #fff;
+}
+
+.bar-empty {
+    background-color: #717171;
+    height: 2px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.bar-progress {
+    background-color: #fff;
+    width: 20%;
+    height: 100%;
+}
 
 /*--------------------
     MEDIA QUERY
