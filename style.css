@@ -175,7 +175,7 @@ p {
 }
 
 .menu img {
-    width: 20px;
+    width: 24px;
 }
 
 .btn-playlist {
@@ -252,6 +252,35 @@ p {
 .bottom-music-container {
     overflow-y: auto;
 }
+
+.category li {
+    position: relative;
+}
+
+.underline-green {
+    height: 3px;
+    width: 36px;
+    background-color: #adff2f;
+    border-radius: 30px;
+    margin-top: 5px;
+    position: absolute;
+    left: 30%;
+}
+
+.nav-first {
+    position: relative;
+}
+
+.leftline-green {
+    height: 30px;
+    width: 3px;
+    background-color: #adff2f;
+    border-radius: 30px;
+    position: absolute;
+    left: -10px;
+}
+
+
 
 /*------------------------
     MAIN CONTENT BOTTOM
