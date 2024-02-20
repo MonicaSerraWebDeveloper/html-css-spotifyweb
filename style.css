@@ -33,6 +33,10 @@ a {
     color: #717171;
 }
 
+a:hover {
+    color: #fff;
+}
+
 /*------------------------
         UTILITIES
 --------------------------*/
@@ -189,6 +193,9 @@ p {
     color: #000;
     padding: 8px;
 }
+.btn-playlist:hover i {
+    background-color: #fff;
+}
 
 .playlist {
     flex-grow: 1;
@@ -235,6 +242,11 @@ p {
     text-transform: uppercase;
     padding: 14px 40px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
 }
 
 .bottom-music-container {
@@ -399,6 +411,14 @@ p {
     width: 20%;
     height: 100%;
     border-radius: 30px;
+}
+
+.zoom-icon {
+    transition: transform 0.3s ease;
+}
+
+.zoom-icon:hover {
+    transform: scale(1.1);
 }
 
 /* COLUMN RIGHT */
