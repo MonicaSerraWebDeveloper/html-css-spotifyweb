@@ -75,7 +75,7 @@ h3 {
         LAYOUT
 ----------------------*/
 
-main {
+.container {
     display: flex;
     height: calc(100vh - 90px);   
 }
