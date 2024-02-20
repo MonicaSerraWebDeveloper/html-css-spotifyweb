@@ -270,6 +270,10 @@ p {
     text-align: center;
 }
 
+.rounded-image {
+    border-radius: 50%;
+}
+
 /*------------------------
     FOOTER PLAYER
 --------------------------*/
