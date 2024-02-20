@@ -96,13 +96,12 @@ main {
 
 .top-bar-container {
     height: 90px;
+    padding: 16px;
 }
 
 .bottom-music-container {
     height: calc(100% - 90px);
 }
-
-
 
 .menu-mobile {
     display: none;
@@ -143,7 +142,7 @@ main {
 #header-side {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 16px;
 }
 
 .logo {
@@ -235,14 +234,11 @@ main {
 @media screen and (max-width: 600px) {
     #header-side {
         width: 50px;
+        padding: 8px;
     }
 
     #col-large {
         width: calc(100% - 50px);
-    }
-
-    .col {
-        padding: 8px;
     }
 
     .logo-mobile {
@@ -252,6 +248,7 @@ main {
 
     .menu-mobile {
         display: block;
+        flex-grow: 1;
     }
 
     .menu-mobile img {
