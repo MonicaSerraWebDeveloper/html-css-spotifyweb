@@ -21,6 +21,7 @@ body {
     color: #717171;
     font-size: 14px;
     font-weight: 600;
+    background-color: #141922;
 }
 
 li {
@@ -149,7 +150,7 @@ p {
 }
 
 .top-bar-container {
-    background-color: #080b12;
+    background-color: rgba(8, 11, 18, 0.4);;
 }
 
 .bottom-music-container {
@@ -277,10 +278,8 @@ p {
     background-color: #adff2f;
     border-radius: 30px;
     position: absolute;
-    left: -10px;
+    left: -15px;
 }
-
-
 
 /*------------------------
     MAIN CONTENT BOTTOM
@@ -321,6 +320,10 @@ p {
 
 .grid-image {
     position: relative;
+}
+
+.grid-image img {
+    display: block;
 }
 
 .overlay-icon {
