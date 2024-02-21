@@ -38,6 +38,20 @@ a:hover {
     color: #fff;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5); 
+    padding-left: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #282828;
+    border-radius: 20px;
+}
+
 /*------------------------
         UTILITIES
 --------------------------*/
