@@ -123,10 +123,13 @@ p {
 .top-bar-container {
     height: 90px;
     padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.bottom-music-container {
-    height: calc(100% - 90px);
+.main-container {
+    height: 100%;
 }
 
 .menu-mobile {
@@ -150,10 +153,10 @@ p {
 }
 
 .top-bar-container {
-    background-color: rgba(8, 11, 18, 0.4);;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.bottom-music-container {
+.main-container{
     background-color: #141922;
 }
 
@@ -250,7 +253,7 @@ p {
     transform: scale(1.1);
 }
 
-.bottom-music-container {
+.main-container {
     overflow-y: auto;
 }
 
