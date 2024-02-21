@@ -336,8 +336,9 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
     z-index: 10;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .overlay-bg {
@@ -347,7 +348,9 @@ p {
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
-    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    
 }
 
 .overlay-bg-rounded {
@@ -357,7 +360,7 @@ p {
 .grid-image:hover .overlay-icon, 
 .grid-image:hover .overlay-bg,
 .grid-image:hover .overlay-bg-rounded {
-    display: block;
+    opacity: 1;
 }
 
 /*------------------------
